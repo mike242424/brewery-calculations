@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.calculations {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.calc {
+  flex: 1 1 50%;
+}
