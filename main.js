@@ -22,7 +22,7 @@ calcPlatoToSpecificGravity.addEventListener('click', function(e) {
   input.value = convertPlatoToSpecificGravity(input.value);
 });
 
-// Function to convert sixteen ounce cases to beer barrels
+// Function to beer mbarrels to convert sixteen ounce cases
 var convertSixteenOunceCasesToBeerBarrels = function(sixteenOunceCases){
   var beerBarrels = sixteenOunceCases * 0.09677;
   return beerBarrels;
@@ -32,9 +32,9 @@ var calcSixteenOunceCasesToBeerBarrels = document.querySelector('#button-beer-ba
 calcSixteenOunceCasesToBeerBarrels.addEventListener('click', function() {
   var input = document.querySelector('#input-beer-barrels-to-16oz-case');
   input.value = convertSixteenOunceCasesToBeerBarrels(input.value);
-})
+});
 
-// Function to convert twelve ounce cases to beer barrels
+// Function to convert beer barrels to twelve ounce cases
 var convertTwelveOunceCasesToBeerBarrels = function(twelveOunceCases){
   var beerBarrels = twelveOunceCases * 0.07258;
   return beerBarrels;
@@ -44,4 +44,28 @@ var calcTwelveOunceCasesToBeerBarrels = document.querySelector('#button-beer-bar
 calcTwelveOunceCasesToBeerBarrels.addEventListener('click', function() {
   var input = document.querySelector('#input-beer-barrels-to-12oz-case');
   input.value = convertTwelveOunceCasesToBeerBarrels(input.value);
-})
+});
+
+// Function to convert beer barrels to sixth barrel kegs
+var convertSixthBarrelKegsToBeerBarrels = function(sixthBarrelKegs){
+  var beerBarrels = sixthBarrelKegs * 0.1667742;
+  return beerBarrels;
+};
+
+var calcSixthBarrelKegsToBeerBarrels = document.querySelector('#button-beer-barrels-to-sixth-barrel-kegs');
+calcSixthBarrelKegsToBeerBarrels.addEventListener('click', function() {
+  var input = document.querySelector('#input-beer-barrels-to-sixth-barrel-kegs');
+  input.value = convertSixthBarrelKegsToBeerBarrels(input.value);
+});
+
+// Function to convert beer barrels to half barrel kegs
+var convertHalfBarrelKegsToBeerBarrels = function(halfBarrelKegs){
+  var beerBarrels = halfBarrelKegs * 0.5;
+  return beerBarrels;
+};
+
+var calcHalfBarrelKegsToBeerBarrels = document.querySelector('#button-beer-barrels-to-half-barrel-kegs');
+calcHalfBarrelKegsToBeerBarrels.addEventListener('click', function() {
+  var input = document.querySelector('#input-beer-barrels-to-half-barrel-kegs');
+  input.value = convertHalfBarrelKegsToBeerBarrels(input.value);
+});
