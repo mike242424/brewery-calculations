@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +15,35 @@
   <body>
     <div class="wrapper">
       <h1>Brewery Calculations</h1>
-      <div class="calculations">
-        <form class="calc">
+      <div class="calculations1">
+        <form class="calc1">
           <h3>Convert Specific Gravity to Plato</h3>
           <input type="text" id="input-gravity-to-plato" />
           <button type="button" id="button-gravity-to-plato">Convert</button>
         </form>
 
-        <form class="calc">
+        <form class="calc1">
           <h3>Convert Plato to Specific Gravity</h3>
           <input type="text" id="input-plato-to-gravity" />
           <button type="button" id="button-plato-to-gravity">Convert</button>
+        </form>
+      </div>
+
+      <div class="calculations2">
+        <form class="calc2">
+          <h3>Convert Beer Barrels to 16oz Case (24 x 16 oz)</h3>
+          <input type="text" id="input-beer-barrels-to-16oz-case" />
+          <button type="button" id="button-beer-barrels-to-16oz-case">
+            Convert
+          </button>
+        </form>
+
+        <form class="calc2">
+          <h3>Convert Beer Barrels to 12oz Case (24 x 12 oz)</h3>
+          <input type="text" id="input-beer-barrels-to-12oz-case" />
+          <button type="button" id="button-beer-barrels-to-12oz-case">
+            Convert
+          </button>
         </form>
       </div>
     </div>

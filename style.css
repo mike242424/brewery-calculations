@@ -8,13 +8,40 @@
   text-align: center;
 }
 
-.calculations {
+.calculations1 {
   border: 1px solid black;
   padding: 20px;
   display: flex;
   text-align: center;
+  margin: 20px;
 }
 
-.calc {
-  flex: 1 1 50%;
+.calc1 {
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.calculations1 {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  margin: 20px;
+}
+
+.calculations2 {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+@media all and (max-width: 800px) {
+  .calculations1 {
+    flex-wrap: wrap;
+  }
+
+  .calc1 {
+    flex: 1 1 100%;
+  }
 }
