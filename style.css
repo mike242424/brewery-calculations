@@ -35,7 +35,7 @@
   flex-basis: 100%;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .calculations1 {
     flex-wrap: wrap;
   }
@@ -62,7 +62,7 @@
   flex-basis: 100%;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .calculations2 {
     flex-wrap: wrap;
   }
@@ -80,14 +80,6 @@
   margin: 80px;
 }
 
-.bottle-wrapper {
-  background-color: white;
-  border: 1px solid black;
-  padding: 30px;
-  text-align: center;
-  margin: 80px;
-}
-
 .calculations3 {
   display: flex;
 }
@@ -97,12 +89,35 @@
   flex-basis: 100%;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1300px) {
   .calculations3 {
     flex-wrap: wrap;
   }
 
   .calc3 {
+    flex: 1 1 100%;
+  }
+}
+
+.bottle-wrapper {
+  background-color: white;
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  margin: 80px;
+}
+
+.calculations4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calc4 {
+  flex: 1 1 50%;
+}
+
+@media all and (max-width: 1200px) {
+  .calc4 {
     flex: 1 1 100%;
   }
 }
