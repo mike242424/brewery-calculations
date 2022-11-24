@@ -4,15 +4,26 @@
   -moz-box-sizing: border-box;
 }
 
+/* .hero {
+  background-image: url("./images/bottles-img.jpg");
+  background-position: center;
+  background-size: cover;
+} */
+
+.title {
+  margin: 40px;
+}
+
 .wrapper {
   text-align: center;
 }
 
 .grav-wrapper {
+  background-color: white;
   border: 1px solid black;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
-  margin: 20px;
+  margin: 80px;
 }
 
 .calculations1 {
@@ -35,10 +46,11 @@
 }
 
 .can-wrapper {
+  background-color: white;
   border: 1px solid black;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
-  margin: 20px;
+  margin: 80px;
 }
 
 .calculations2 {
@@ -61,17 +73,19 @@
 }
 
 .keg-wrapper {
+  background-color: white;
   border: 1px solid black;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
-  margin: 20px;
+  margin: 80px;
 }
 
 .bottle-wrapper {
+  background-color: white;
   border: 1px solid black;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
-  margin: 20px;
+  margin: 80px;
 }
 
 .calculations3 {
