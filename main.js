@@ -1,14 +1,7 @@
-// Function to round to the nearest half number(0.5)
-var roundToNearestHalfNumber = function(number) {
-  var halfRoundedNumber = Math.round(number / 0.5) * 0.5;
-  return halfRoundedNumber;
-}
-
-
 // Function to convert Specific Gravity to Plato
 var convertSpecificGravityToPlato = function(specificGravityNumber) {
   platoNumber = (-1 * 616.868) + (1111.14 * specificGravityNumber) - (630.272 * (specificGravityNumber * specificGravityNumber)) + (135.997 * (specificGravityNumber * specificGravityNumber * specificGravityNumber));
-  return roundToNearestHalfNumber(platoNumber);
+  return platoNumber.toFixed(1);
 };
 
 var calcSpecificGravityToPlato = document.querySelector('#button-gravity-to-plato');

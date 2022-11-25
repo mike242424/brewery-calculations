@@ -2,20 +2,59 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* .hero {
-  background-image: url("./images/bottles-img.jpg");
-  background-position: center;
-  background-size: cover;
-} */
+html {
+  margin: 0;
+  padding: 0;
+}
 
-.title {
-  margin: 40px;
+h4 {
+  padding: 20px;
 }
 
 .wrapper {
   text-align: center;
+}
+
+.dark-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/can-img.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#hero .container {
+  height: 50vh;
+}
+
+.title {
+  align-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+
+.nav-bar ul {
+  display: flex;
+  padding: 20px;
+}
+
+.nav-bar ul li {
+  display: inline;
+  flex: 1;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .grav-wrapper {
@@ -23,11 +62,12 @@
   border: 1px solid black;
   padding: 30px;
   text-align: center;
-  margin: 80px;
+  margin: 50px;
 }
 
 .calculations1 {
   display: flex;
+  padding: 20px;
 }
 
 .calc1 {
@@ -50,11 +90,12 @@
   border: 1px solid black;
   padding: 30px;
   text-align: center;
-  margin: 80px;
+  margin: 50px;
 }
 
 .calculations2 {
   display: flex;
+  padding: 20px;
 }
 
 .calc2 {
@@ -77,11 +118,12 @@
   border: 1px solid black;
   padding: 30px;
   text-align: center;
-  margin: 80px;
+  margin: 50px;
 }
 
 .calculations3 {
   display: flex;
+  padding: 20px;
 }
 
 .calc3 {
@@ -104,12 +146,13 @@
   border: 1px solid black;
   padding: 30px;
   text-align: center;
-  margin: 80px;
+  margin: 50px;
 }
 
 .calculations4 {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .calc4 {
