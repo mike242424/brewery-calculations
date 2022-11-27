@@ -1,3 +1,22 @@
+// Function to add an image slide show at the bottom of the page
+$(function(){
+  var $galleryImage = $('div#slideshow').find('img').first();
+  var images = [
+    "./images/keg-img.jpg",
+    "./images/bottles-img.jpg",
+    "./images/hops-img.jpg",
+    "./images/beer-img.jpg",
+  ];
+  var i = 0;
+  setInterval(function() {
+    i = (i + 1) % images.length;
+    $galleryImage.fadeOut(3000, function() {
+      $(this).attr('src', images[i]);
+      $(this).fadeIn(3000);
+    })
+  }, 2000);
+});
+
 // Function to convert Specific Gravity to Plato
 var convertSpecificGravityToPlato = function(specificGravityNumber) {
   platoNumber = (-1 * 616.868) + (1111.14 * specificGravityNumber) - (630.272 * (specificGravityNumber * specificGravityNumber)) + (135.997 * (specificGravityNumber * specificGravityNumber * specificGravityNumber));
