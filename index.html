@@ -10,7 +10,6 @@
       integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,15 +20,13 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav
       class="navbar navbar-default navbar-expand-md navbar-fixed-top navbar-dark bg-success"
     >
       <div class="container">
-        <a class="navbar-brand text-white"
-          ><i class="fa-solid fa-beer-mug-empty"></i
-        ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,22 +38,26 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+          <ul class="navbar-nav">
+            <li class="nav-item me-auto">
               <a href="#gravity" class="nav-link text-white">Gravity</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-auto">
               <a href="#canning" class="nav-link text-white">Canning</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-auto">
               <a href="#kegging" class="nav-link text-white">Kegging</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-auto">
               <a href="#bottling" class="nav-link text-white">Bottling</a>
             </li>
           </ul>
         </div>
+        <a class="navbar-brand text-white ms-auto"
+          ><i class="fa-solid fa-beer-mug-empty"></i
+        ></a>
       </div>
     </nav>
 
@@ -75,24 +76,35 @@
         <h2 class="text-success"><strong>Gravity Conversions</strong></h2>
         <div class="calculations1">
           <form class="calc1">
-            <h4>Convert Specific Gravity to Plato</h4>
-            <input type="text" id="input-gravity-to-plato" />
-            <button
-              type="button"
-              id="button-gravity-to-plato"
-              class="btn btn-success ms-2"
-            >
-              Convert
-            </button>
+            <h4>Convert Specific Gravity To Plato</h4>
+            <div class="input-container">
+              <input
+                type="number"
+                id="input-gravity-to-plato"
+                placeholder="Ex. 1.048"
+              />
+              <button
+                type="button"
+                id="button-gravity-to-plato"
+                class="button-conversion btn btn-success ms-2"
+              >
+                Convert
+              </button>
+              <div id="gravity-div"></div>
+            </div>
           </form>
 
           <form class="calc1">
-            <h4>Convert Plato to Specific Gravity</h4>
-            <input type="text" id="input-plato-to-gravity" />
+            <h4>Convert Plato To Specific Gravity</h4>
+            <input
+              type="number"
+              id="input-plato-to-gravity"
+              placeholder="Ex. 12"
+            />
             <button
               type="button"
               id="button-plato-to-gravity"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -104,24 +116,32 @@
         <h2 class="text-success"><strong>Canning Conversions</strong></h2>
         <div class="calculations2">
           <form class="calc2">
-            <h4>Convert 16oz Cases (24 cans each) To Beer Barrels</h4>
-            <input type="text" id="input-sixteen-cases-to-beer-barrels" />
+            <h4>Convert 16oz Cases (24 Cans Each) To Beer Barrels</h4>
+            <input
+              type="number"
+              id="input-sixteen-cases-to-beer-barrels"
+              placeholder="Ex. 900"
+            />
             <button
               type="button"
               id="button-sixteen-cases-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
           </form>
 
           <form class="calc2">
-            <h4>Convert 12oz Cases (24 cans each) To Beer Barrels</h4>
-            <input type="text" id="input-twelve-cases-to-beer-barrels" />
+            <h4>Convert 12oz Cases (24 Cans Each) To Beer Barrels</h4>
+            <input
+              type="number"
+              id="input-twelve-cases-to-beer-barrels"
+              placeholder="Ex. 900"
+            />
             <button
               type="button"
               id="button-twelve-cases-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -134,11 +154,15 @@
         <div class="calculations3">
           <form class="calc3">
             <h4>Convert Sixth Barrel Kegs To Beer Barrels</h4>
-            <input type="text" id="input-sixth-barrel-kegs-to-beer-barrels" />
+            <input
+              type="number"
+              id="input-sixth-barrel-kegs-to-beer-barrels"
+              placeholder="Ex. 20"
+            />
             <button
               type="button"
               id="button-sixth-barrel-kegs-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -146,11 +170,15 @@
 
           <form class="calc3">
             <h4>Convert Half Barrel Kegs To Beer Barrels</h4>
-            <input type="text" id="input-half-barrel-kegs-to-beer-barrels" />
+            <input
+              type="number"
+              id="input-half-barrel-kegs-to-beer-barrels"
+              placeholder="Ex. 8"
+            />
             <button
               type="button"
               id="button-half-barrel-kegs-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -159,13 +187,14 @@
           <form class="calc3">
             <h4>Convert 20L Key Kegs To Beer Barrels</h4>
             <input
-              type="text"
+              type="number"
               id="input-twenty-liter-key-kegs-to-beer-barrels"
+              placeholder="Ex. 10"
             />
             <button
               type="button"
               id="button-twenty-liter-key-kegs-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -180,11 +209,15 @@
             <h4>
               Convert 375mL Bottle Cases (12 Bottles Each) To Beer Barrels
             </h4>
-            <input type="text" id="input-375mL-bottles-to-beer-barrels" />
+            <input
+              type="number"
+              id="input-375mL-bottles-to-beer-barrels"
+              placeholder="Ex. 400"
+            />
             <button
               type="button"
               id="button-375mL-bottles-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -194,11 +227,15 @@
             <h4>
               Convert 500mL Bottle Cases (12 Bottles Each) To Beer Barrels
             </h4>
-            <input type="text" id="input-500mL-bottles-to-beer-barrels" />
+            <input
+              type="number"
+              id="input-500mL-bottles-to-beer-barrels"
+              placeholder="Ex. 400"
+            />
             <button
               type="button"
               id="button-500mL-bottles-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -206,11 +243,15 @@
 
           <form class="calc4">
             <h4>Convert 22oz Bottle Cases (12 Bottles Each) To Beer Barrels</h4>
-            <input type="text" id="input-22oz-bottles-to-beer-barrels" />
+            <input
+              type="number"
+              id="input-22oz-bottles-to-beer-barrels"
+              placeholder="Ex. 400"
+            />
             <button
               type="button"
               id="button-22oz-bottles-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
@@ -220,11 +261,15 @@
             <h4>
               Convert 750mL Bottle Cases (12 Bottles Each) To Beer Barrels
             </h4>
-            <input type="text" id="input-750mL-bottles-to-beer-barrels" />
+            <input
+              type="number"
+              id="input-750mL-bottles-to-beer-barrels"
+              placeholder="Ex. 400"
+            />
             <button
               type="button"
               id="button-750mL-bottles-to-beer-barrels"
-              class="btn btn-success ms-2"
+              class="button-conversion btn btn-success ms-2"
             >
               Convert
             </button>
